@@ -22,19 +22,19 @@ DallasTemperature sensors(&oneWire);
 DeviceAddress insideThermometer;
 
 // Replace the next variables with your SSID/Password combination
-const char* ssid = "AnaPaula";
-const char* password = "ana.clave";
+const char* ssid = "YOUR_SSID";
+const char* password = "YOUR_KEY";
 
 // Replace it with your MQTT Broker IP address or domain
 const char* mqtt_server = "broker.qubitro.com";
 
 // Define an ID to indicate the device, If it is the same as other devices which connect the same mqtt server,
 // it will lead to the failure to connect to the mqtt server
-const char* mqttClientId = "d9be8837-e2ed-4efc-9c37-f9f669aa7143";
+const char* mqttClientId = "YOUR_QUBITRO_MQTT_CLIENT_ID";
 
 // if need username and password to connect mqtt server, they cannot be NULL.
-const char* deviceID = "d9be8837-e2ed-4efc-9c37-f9f669aa7143";
-const char* deviceToken = "ardE7DqQFct2j3SrO2ApKbii1Dx6NkNx8EClSgKT";
+const char* deviceID = "YOUR_QUBITRO_DEVICE_ID";
+const char* deviceToken = "YOUR_QUBITRO_MQTT_PASSWORD";
 
 WiFiClient espClient;
 QubitroMqttClient mqttClient(espClient);
